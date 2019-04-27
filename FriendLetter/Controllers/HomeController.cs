@@ -16,10 +16,14 @@ namespace FriendLetter.Controllers
     {
         LetterVariable myLetterVariable = new LetterVariable();
         myLetterVariable.SetRecipient("Aaryn");
+        myLetterVariable.SetSender("Tessa");
         return View(myLetterVariable);
     }
 
     [Route("/journal")]
     public ActionResult Journal() { return View(); }
+
+    [Route("/form")]
+    public ActionResult Form() { return View(); }
   }
 }
